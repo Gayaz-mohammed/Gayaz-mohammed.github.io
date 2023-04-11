@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(earth2.jpg);
+    background-size: cover;
+}
+.container{
+    width: 330px;
+    background:rgba(255, 255, 255, 0.246) ;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+    box-shadow: 5px 5px 50px #59a3df;
+}
+.container header{
+    font-size: 35px;
+    font-weight:600;
+    margin: 0 0 30px 0;
+    color: navy;
+}
+.container .form-outer{
+    width: 100%;
+   overflow: hidden;
+}
+.form-outer form {
+    display:flex;
+    width: 400%;
+}
+.form-outer form .page{
+    width: 25%;
+}
+.form-outer{
+    display: 100%;
+}
+.form-outer form .page{
+    width: 25%; 
+}
+.form-outer form .page .title{
+    text-align: left;
+    font-size:25px;
+    font-weight: 500;
+    color: navy;
+}
+.form-outer form .page  .field{
+    height:45 px;
+    width: 350px;
+    margin: 45px 0;
+    display: flex;
+    position:relative;
+}
+.form-outer form .page  .field .label{
+   position: absolute;
+   top: -30px;
+   font-weight: 400;
+}
+.form-outer form .page  .field input{
+    height: 100%;
+    width: 80%;
+    border :1px solid lightgray;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px;
+    padding-left: 15px;
+}
+.form-outer form .page  .field button{
+    width: 150px;
+    padding: 12px;
+    height: calc(200/ 4% +5px);
+    margin-top:-20px;
+    border: none;
+    color: white;
+    background: #59a7df;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+.form-outer form .page  .field button:hover{
+    background: #ffffff48;
+    transition:all 0.5s ease;
+    color: rgb(23, 99, 240);
+    box-shadow: 5px 5px 25px #59a3df;
+}
+.form-outer form .page  .btn button{
+    margin-top: -20px;
+}
+form .page .btn button.prev{
+    margin :8px ;
+    font-size: 17px;
+    margin-right: 100px;
+}
+form .page .btn button.next{
+    margin-left:5px;
+    margin-right: 28px;
+}
+.container .progress-bar{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  
+}
+.container .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+    display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -70px;
+    height: 3px;
+    width:70px;
+    background: #59a3df;
+}
+.progress-bar .step .bullet:after{
+    background: #fff;
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: animate 0.5s linear forwards ;
+}
+@keyframes animate {
+    to{
+        transform: scaleX(1);
+    }
+}
+.progress-bar .step p{
+    font-size:18px ;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #59a3df ;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+.progress-bar .step span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    left: 50% ;
+    position: absolute;    
+    transform: translateX(-50%);
+
+}
+.progress-bar .step .check{
+    display: none;
+    position: relative;
+    left: -16%;
+    top: -18%;
+    font-size: 14px;
+    transform: translate(-50%, 50%);
+} 
+.progress-bar .step .bullet1{
+    background: green;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 2px solid green;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+.progress-bar .step .bullet1:after{
+    background: #fff;
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: animate 0.5s linear forwards ;
+}
+.progress-bar .step .bullet1:after{
+    background: green;
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: animate1 0.5s linear forwards ;
+}
+@keyframes animate1 {
+    to{
+        transform: scaleX(1);
+    }
+}
+.progress-bar .step:last-child .bullet1:before,
+.progress-bar .step:last-child .bullet:after{
+    display: none;
+}
+.progress-bar .step .bullet1:before,
+.progress-bar .step .bullet1:after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -70px;
+    height: 3px;
+    width:70px;
+    background: green;
+}
+/*page 3*/
+.progress-bar .step p{
+    font-size:18px ;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #59a3df ;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+.progress-bar .step span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    left: 50% ;
+    position: absolute;    
+    transform: translateX(-50%);
+
+}
+.progress-bar .step .check{
+    display: none;
+    position: relative;
+    left: -16%;
+    top: -18%;
+    font-size: 14px;
+    transform: translate(-50%, 50%);
+} 
+.progress-bar .step .bullet2{
+    background: green;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 2px solid green;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+.progress-bar .step .bullet2:after{
+    background: #fff;
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: animate 0.5s linear forwards ;
+}
+.progress-bar .step .bullet2:after{
+    background: green;
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: animate2 0.5s linear forwards ;
+}
+@keyframes animate2 {
+    to{
+        transform: scaleX(1);
+    }
+}
+.progress-bar .step:last-child .bullet1:before,
+.progress-bar .step:last-child .bullet:after{
+    display: none;
+}
+.progress-bar .step .bullet2:before,
+.progress-bar .step .bullet2:after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -70px;
+    height: 3px;
+    width:70px;
+    background: green;
+}
